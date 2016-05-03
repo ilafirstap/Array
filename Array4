@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main ()
+{
+
+
+    int n;
+
+    cout<<"Masukkan Jumlah Mahasiswa :"<<endl;
+    cin>>n;
+
+
+    int NIM[n];
+    string Nama[n];
+    for (int C=0; C<n; C++) {
+
+        cout << "NIM["<<C<<"]=";
+        cin>>NIM[C];
+        cout<<"Nama["<<C<<"]=";
+        cin >> Nama[C];
+        cout<<endl;
+    }
+     for (int C=0; C<n; C++) {
+        cout<<NIM[C]<<" ";
+        cout<<Nama[C]<<endl;
+    }
+    return 0;
+}
+
